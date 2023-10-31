@@ -164,14 +164,78 @@ function productfollows(){
         })
     })
 }
-document.querySelector("video"),addEventListener("mousemove", function(dets){
+document.querySelector("video").addEventListener("mousemove", function(dets){
     gsap.to(".play",{
         display: "block",
         scale: 1
     })
 })
+function elembox1ani(){
+    document.querySelector(".elembox-1").addEventListener("mousemove", function(){
+        gsap.to(".elemarrowrotate-1", {
+            rotate: 45,
+        })
+        gsap.to(".elembox-1", {
+            gap: "20px",
+    
+        })
+    })
+    document.querySelector(".elembox-1").addEventListener("mouseleave", function(){
+        gsap.to(".elemarrowrotate-1", {
+            rotate: 0,
+        })
+        gsap.to(".elembox-1", {
+            gap: "0px",
+    
+        })
+    })
+}
+function elembox2ani(){
+    document.querySelector(".elembox-2").addEventListener("mousemove", function(){
+        gsap.to(".elemarrowrotate-2", {
+            rotate: 45,
+        })
+        gsap.to(".elembox-2", {
+            gap: "20px",
+    
+        })
+    })
+    document.querySelector(".elembox-2").addEventListener("mouseleave", function(){
+        gsap.to(".elemarrowrotate-2", {
+            rotate: 0,
+        })
+        gsap.to(".elembox-2", {
+            gap: "0px",
+    
+        })
+    })
+}
+function elembox3ani(){
+    document.querySelector(".elembox-3").addEventListener("mousemove", function(){
+        gsap.to(".elemarrowrotate-3", {
+            rotate: 45,
+        })
+        gsap.to(".elembox-3", {
+            gap: "20px",
+    
+        })
+    })
+    document.querySelector(".elemarrowrotate-3").addEventListener("mouseleave", function(){
+        gsap.to(".elemarrowrotate-3", {
+            rotate: 0,
+        })
+        gsap.to(".elembox-3", {
+            gap: "0px",
+    
+        })
+    })
+}
+
 locomotiveani()
 productfollows();
 navani();
 page1ani();
 page2ani();
+elembox1ani()
+elembox2ani()
+elembox3ani()
