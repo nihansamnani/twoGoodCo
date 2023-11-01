@@ -59,14 +59,26 @@ function page2ani(){
     // })
 }
 function productfollows(){
+    document.querySelector(".page4").addEventListener("mousemove", function(dets){
+        gsap.to(".circlefollow",{
+            scale: 0,
+            display: "none"
+        })
+    })
+    document.querySelector(".page4").addEventListener("mouseleave", function(dets){
+        gsap.to(".circlefollow",{
+            scale: 1,
+            display: "block"
+        })
+    })
     document.querySelector("#productbox1").addEventListener("mousemove" ,function(dets){
         // alert()
         gsap.to(".productcircle", {
             opacity: 1,
             display: "inline",
             scale: 1,
-            x: dets.x-450,
-            y: dets.y-400,
+            x: dets.x-550,
+            y: dets.y-550,
             duration: .25,
             scrub: 5,
             backgroundColor: "rgb(255, 202, 164)",
@@ -79,8 +91,8 @@ function productfollows(){
             opacity: 0,
             // display: "inline",
             scale: 0,
-            x: dets.x-450,
-            y: dets.y-400,
+            x: dets.x-550,
+            y: dets.y-550,
             duration: .25,
             scrub: 5
         })
@@ -91,8 +103,8 @@ function productfollows(){
             opacity: 1,
             display: "inline",
             scale: 1,
-            x: dets.x-450,
-            y: dets.y-400,
+            x: dets.x-550,
+            y: dets.y-550,
             duration: .25,
             scrub: 5,
             backgroundColor: "rgb(233, 233, 233)",
@@ -105,20 +117,21 @@ function productfollows(){
             opacity: 0,
             // display: "inline",
             scale: 0,
-            x: dets.x-450,
-            y: dets.y-400,
+            x: dets.x-700,
+            y: dets.y-700,
             duration: .25,
             scrub: 5
         })
     })
     document.querySelector("#productbox4").addEventListener("mousemove" ,function(dets){
         // alert()
+        
         gsap.to(".productcircle", {
             opacity: 1,
             display: "inline",
             scale: 1,
-            x: dets.x-450,
-            y: dets.y,
+            x: dets.x-550,
+            y: dets.y-50,
             duration: .25,
             scrub: 5,
             backgroundColor: "rgb(255, 202, 164)",
@@ -131,8 +144,8 @@ function productfollows(){
             scale: 0,
             opacity: 0,
             // display: "inline",
-            x: dets.x-450,
-            y: dets.y-400,
+            x: dets.x-550,
+            y: dets.y-50,
             duration: .25,
             scrub: 5
         })
@@ -143,8 +156,8 @@ function productfollows(){
             opacity: 1,
             display: "inline",
             scale: 1,
-            x: dets.x-450,
-            y: dets.y,
+            x: dets.x-550,
+            y: dets.y-50,
             duration: .25,
             scrub: 5,
             backgroundColor: "rgb(233, 233, 233)",
@@ -157,8 +170,8 @@ function productfollows(){
             scale: 0,
             opacity: 0,
             // display: "inline",
-            x: dets.x-450,
-            y: dets.y-400,
+            x: dets.x-550,
+            y: dets.y-50,
             duration: .25,
             scrub: 5
         })
@@ -230,7 +243,13 @@ function elembox3ani(){
         })
     })
 }
+function CircleFollow(){
+    window.addEventListener("mousemove", function(details){
+        document.querySelector(".circlefollow").style.transform = `translate(${details.clientX}px, ${details.clientY}px)`
+    })
+}
 
+CircleFollow();
 locomotiveani()
 productfollows();
 navani();
