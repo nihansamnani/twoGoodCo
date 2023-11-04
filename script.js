@@ -53,11 +53,6 @@ function page1ani(){
         delay: .5
     })
 }
-function page2ani(){
-    // gsap.from(".page2 video", {
-
-    // })
-}
 function productfollows(){
     document.querySelector(".page4").addEventListener("mousemove", function(dets){
         gsap.to(".circlefollow",{
@@ -177,12 +172,7 @@ function productfollows(){
         })
     })
 }
-document.querySelector("video").addEventListener("mousemove", function(dets){
-    gsap.to(".play",{
-        display: "block",
-        scale: 1
-    })
-})
+
 function elembox1ani(){
     document.querySelector(".elembox-1").addEventListener("mousemove", function(){
         gsap.to(".elemarrowrotate-1", {
