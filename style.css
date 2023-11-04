@@ -168,8 +168,8 @@ html, body{
     padding: 0 1vw;
 }
 .elem{
-    height: 100vh;
-    width: 32%;
+    height: 44rem;
+        width: 22rem;
     object-fit: cover;
     position: relative;
     overflow: hidden;
@@ -183,8 +183,8 @@ html, body{
     scale: 1.3;
 }
 .elembox{
-    height: 4vw;
-    width: 25vw;
+    height: 8%;
+    width: 80%;
     background-color: #e5f0d6;
     position: absolute;
     /* top: 50%;
@@ -306,7 +306,7 @@ html, body{
     font-size: 1vw;
     font-weight: 600;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
     .circlefollow{
         display: none;
     }
@@ -387,8 +387,8 @@ html, body{
         gap: 1rem;
     }
     .elem{
-        height: 85vh;
-        width: 100vw;
+        height: 44rem;
+        width: 22rem;
         object-fit: cover;
         position: relative;
         overflow: hidden;
@@ -402,8 +402,8 @@ html, body{
         scale: 1.3;
     }
     .elembox{
-        height: 12vw;
-        width: 60vw;
+        height: 8%;
+        width: 80%;
         background-color: #e5f0d6;
         position: absolute;
         /* top: 50%;
